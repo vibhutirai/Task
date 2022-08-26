@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  title= "Sum of Two Numbers">
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="number" value={number1} name="firstnumber"  label="Enter First Number" onchange={handleChange} ></lightning-input>
+            <lightning-input type="number" value={number2} name="secondnumber"  label="Enter Second Number" onchange={handleChange} ></lightning-input>
+            <lightning-button label="Add" slot="actions" onclick={handleClick}></lightning-button>
+            <lightning-input type="number" value={sum} name="Result"  label="Result" ></lightning-input>
+        </p>
+    </lightning-card>
+</template>
