@@ -21,7 +21,11 @@ public with sharing class Controller {
 public static List<String> Table(String str){
 List<String> listOfString = new List<String>();
 try {
-    If(str.contains(',')){
+    
+    If(!str.contains('@') && !str.contains('#') && !str.contains('/') && !str.contains('|') ){
+     If(str.length()>1){
+          str = str.removeEnd(',');
+     }
         listOfString=str.split(',');
     }
     }
